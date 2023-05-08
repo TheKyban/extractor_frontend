@@ -22,8 +22,8 @@ function App() {
       <contexts.Provider value={{ loading, setLoading, URL, setURL }}>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/google' element={<Google />} />
+          <Route path='/news' element={<Home />} />
+          <Route path='/' element={<Google />} />
           <Route path='/details' element={<Details />} />
         </Routes>
 

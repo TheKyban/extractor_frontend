@@ -33,7 +33,7 @@ function Google() {
                     <input type="text" placeholder='Enter google news link' onChange={(e) => setUrl(e.target.value)} value={url} name='google' />
 
                     <div>
-                        <p>Have News <Link to={"/"}>Link</Link></p>
+                        <p>Have News <Link to={"/news"}>Link</Link></p>
                     </div>
 
                     <button type='submit'>Extract</button>
