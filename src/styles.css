@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins&family=Sail&family=Ubuntu&family=Zeyada&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "open sans";
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* NAVBAR */
+
+a {
+    text-decoration: none;
+    /* color: white; */
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    box-shadow: 0 1px 3px #ffffffc5;
+    border-radius: 0 0 15px 15px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+}
+
+
+.navbar ul a {
+    color: white;
+}
+
+/* Links */
+
+.container {
+    width: 300px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.newsLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px 10px;
+}
+
+.newsLink input {
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 3px;
+}
+
+/* Button */
+
+.newsLink button {
+    font-size: 1rem;
+    padding: 7px;
+    margin-bottom: 5px;
+    outline: none;
+    border: none;
+    background-color: #d2df8c;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.newsLink h2 {
+    text-align: center;
+    /* margin-bottom: 2px; */
+}
+
+/* Details */
+
+.details {
+    /* padding: 15px; */
+    padding: 50px 250px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+    gap: 30px;
+}
+
+.detail p {
+    font-size: 0.8rem;
+}
+
+.texts {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width:1000px) {
+    .details {
+        padding: 50px 150px;
+    }
+}
+@media screen and (max-width:750px) {
+    .details {
+        padding: 50px 100px;
+    }
+}
+@media screen and (max-width:550px) {
+    .details {
+        padding: 30px 50px;
+    }
+}
+@media screen and (max-width:450px) {
+    .details {
+        padding: 25px 25px;
+    }
+}
+
+/* Loading */
+
+#loading {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loading {
+    width: 30px;
+    height: 30px;
+    border-left: 1px solid black;
+
+    border-radius: 50%;
+    animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(360deg);
+    }
+}
